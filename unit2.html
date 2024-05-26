@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theory of Computation - 2 Mark Questions UNIT - 1</title>
+    <link rel="stylesheet" href="./sources/twomarks.css">
+</head>
+<body>
+    <header>
+        <h1>UNIT - 2</h1>
+        <p>Important 2 Mark Questions</p>
+    </header>
+    <main>
+      <!--Do not change any attributes name-->
+      <!--For understanding (Do not change the colored text other than Green and White)-->
+        <section class="question-container">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 1</h2>
+                <p class="question-text">Give regular expressions for the following <br>
+                    L1=set of all strings of 0 and 1 ending in 00<br>
+                    L2=set of all strings of 0 and 1 beginning with 0 and ending with 1</p>
+                <p class="answer">RE1=(0+1)+ 00<br>
+                    RE2=0(0+1)+1.
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 2</h2>
+                <p class="question-text">Is regular set is closed under complementation?Justify.</p>
+                <p class="answer">Closure under complement<br>
+                    • If L is a regular language, over alphabet ∑ <br>
+                    Complement of L=∑* - L<br>
+                    • Let L = L(A) for DFA A = (Q, ∑, δ, q0, F)<br>
+                    • Complement of L = L(B) where DFA B = (Q, ∑, δ, q0, Q-F)<br>
+                    • B is similar to A except accepting states of A have become non-accepting states of B and vice-versa. <br>
+                    A string w is in L(B) iff δ’ (q0,w) is in Q-F which occurs iff w 
+                    is not in L(A).
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 3</h2>
+                <p class="question-text">Prove that the complement of a regular language is also 
+                    regular.</p>
+                <p class="answer">Complement of L1 is constructed from L1 by reversing the states and 
+                    the arrows in automata.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 4</h2>
+                <p class="question-text">Is the set of strings over the alphabet {0} of the form 0n where n 
+                    is not a prime is regular? Prove or disprove.</p>
+                <p class="answer">To prove this language is not regular, examine the complement 
+                    because the set of regular languages is closed under complement.
+                    Assume that the set is regular. Let p be the pumping length of the 
+                    language. Then, according to the pumping lemma, break the string 
+                    s=0p
+                    into s=xyz where y has positive length.
+                    Then, s=xyi
+                    z=0p+(i-1)|y| must also be in the set for any i. In particular 
+                    let i=p+1.Then xyp+1z=0p+p|y| must be in the set so p+p|y| = p(1+|y|) 
+                    must be prime.
+                    Thus we have a contradiction and the set cannot be regular.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 5</h2>
+                <p class="question-text">Let L = {w:w ε {0,1}* w does not contain 00 and is not empty}. <br>
+                    Construct a regular expression that generates L.</p>
+                <p class="answer">Regular Expression = (0+1)(1+10)*(101+1)*
+                </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 6</h2>
+                <p class="question-text">Prove or disprove that the regular languages are closed under 
+                    concatenation and complement. </p>
+                <p class="answer">Closure under concatenation:<br>
+                    
+                    • Since L and M are regular languages,they have regular 
+                    expressions <br>
+                    L=L(R) and M=L(S)<br>
+                    • Then L.M = L(R.S), by definition of regular expression
+                    Closure under complement:<br>
+                    
+                    • If L is a regular language, over alphabet ∑ 
+                    Complement of L=∑* - L<br>
+                    • Let L = L(A) for DFA A = (Q, ∑, δ, q0, F)<br>
+                    • Complement of L = L(B) where DFA B = (Q, ∑, δ, q0, Q-F)<br>
+                    • B is similar to A except accepting states of A have become non-accepting states of B and vice-versa. <br>
+                    • A string w is in L(B) iff δ’ (q0,w) is in Q-F which occurs iff w is
+                    not in L(A).
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 7</h2>
+                <p class="question-text">Give the regular expression for set of all strings ending in 00.
+                 </p>
+                <p class="answer">(0+1)*00
+                </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 8</h2>
+                <p class="question-text">State pumping lemma for regular set.</p>
+                <p class="answer">Let L be a regular set. Then there is a constant n such that if Z is a 
+                    string in L and |Z| >=n, Z can be written as Z=UVW such that |V|>=1 
+                    and |UV|<=n and for all i>=0 UViW is in L.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 9</h2>
+                <p class="question-text">What is a regular expression ?</p>
+                <p class="answer">A regular expression (abbreviated regex or regexp) is a sequence of 
+                    characters that forms a search pattern, mainly for use in pattern 
+                    matching with strings, or string matching, i.e. "find and replace"-like 
+                    operations.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 10</h2>
+                <p class="question-text">Name any four closure properties of regular languages .</p>
+                <p class="answer">union, intersection, complement, difference</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 11</h2>
+                <p class="question-text">Construct a CFG for set of strings that contain equal number of a’s 
+                    and b’s over ∑ = {a,b}.</p>
+                <p class="answer">S->A|B<br>
+                    A→aA|€<br>
+                    B→bB|€<br>
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 12</h2>
+                <p class="question-text">Construct the Context free grammar representing the set of 
+                    palindromes over (0+1)*.</p>
+                <p class="answer">S->0S0|1S1| ε.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 13</h2>
+                <p class="question-text"> Is it true that the language accepted by any NFA is different from the regular language? Justify your answer. </p>
+                <p class="answer">No, any language accepted by DFA, NFA, ε-NFA is called a regular language. For any finite automaton we can construct an equivalent regular expression and the language represented by regular expressions is a regular language.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 14</h2>
+                <p class="question-text">Show that (r*)* = r* for a regular expression r.</p>
+                <p class="answer">Consider,<br>
+
+                    r = 0     where Σ = {0}<br>
+                    
+                    Now   L.H.S. = (r*)*<br>
+                    
+                    = ((0)*)*<br>
+                    
+                    = {ε, 0, 00, 000, ...}  …(1)<br>
+                    
+                    Thus the set contains string of O's including null string.<br>
+                    
+                    Now R.H.S. = r*<br>
+                    
+                    = (0)*<br>
+                    
+                    = {ε, 0, 00, ... } …(2)<br>
+                    
+                    From equation (1) and (2) it is proved that<br>
+                    
+                    L.H.S. = R.H.S.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 15</h2>
+                <p class="question-text">Write regular expression for the set of all strings of 0's and 1's not containing 101 as substring.</p>
+                <p class="answer">r.e. = 0*(1*000*)*1*0*<br>
+
+                    In above expression all 1's are followed by 00. This pattern is repeated for any number of times.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 16</h2>
+                <p class="question-text">What is [10,11]* ? (Write atleast first seven terms).</p>
+                <p class="answer"> The {10+ 11}* is a set containing the strings of any combination of 10 and 11. This set also contains & or null string.<br>
+
+                    The items of this set are<br>
+                    
+                    {ε, 10, 11, 1010, 1011, 1111, 1110, 111111, 101010, ...}</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 17</h2>
+                <p class="question-text">Mention the applications of pumping lemma.</p>
+                <p class="answer"> 1. Pumping lemma is used for deciding whether or not the given language is regular.<br>
+
+                    2. It is also useful for determing whether L is accepted by a regular expression or not.<br>
+                    
+                    Example 1:<br>
+                    
+                    L = {0n1n} is not regular.<br>
+                    
+                    L = {0P|p-is a prime number}<br>
+                    
+                    Example 2:<br>
+                    
+                    All these languages are non-regular languages and this can be proved by pumping lemma.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 18</h2>
+                <p class="question-text">Give regular expression to describe an identifier and positive integer.</p>
+                <p class="answer"> id = (a - zA - Z) (a - zA - Z 0-9)*
+                    P = (0-9)+</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 19</h2>
+                <p class="question-text"> State the precedence of regular expression operators.</p>
+                <p class="answer"> The star operator is having highest precedence.<br>
+                                   The dot operator (concatenation) has the next highest position.<br>
+                                   Final precedence is given to + i.e. union operation. The union is an associative operator.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 20</h2>
+                <p class="question-text"> What is meant by equivalent states in DFA ? </p>
+                <p class="answer">The two states are said to be equivalent if there are same inputs coming to the state and same output going out from the states.</p>
+            </div>
+            <!--copy and paste the above code to add more questions-->
+        </section>
+    </main>
+    <script src="./sources/twomarks.js"></script>
+</body>
+</html>
+

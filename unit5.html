@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theory of Computation - 2 Mark Questions UNIT - 5</title>
+    <link rel="stylesheet" href="./sources/twomarks.css">
+</head>
+<body>
+    <header>
+        <h1>UNIT - 5</h1>
+        <p>Important 2 Mark Questions</p>
+    </header>
+    <main>
+      <!--Do not change any attributes name-->
+      <!--For understanding (Do not change the colored text other than Green and White)-->
+        <section class="question-container">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 1</h2>
+                <p class="question-text">When we say a problem is decidable? Give an example of undecidable problem?</p>
+                <p class="answer">problem whose language is recursive is said to be decidable. Otherwise the problem is undecidable . i.e there is no algorithm that takes as input an instance of the problem and determines whether the answer to that instance is yes or no.
+                    Eg. Halting problem 	
+                   </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 2</h2>
+                <p class="question-text">Mention the difference between P and NP problems?</p>
+                <p class="answer">P consists of all those languages or problems accepted by some TM that runs in some polynomial amount of time, as a function of its input length. 
+                    NP is the class of languages or problems that are accepted by some nondeterministic TM‟s with a polynomial bound on time taken along any sequence of nondeterministic choices. 	
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 3</h2>
+                <p class="question-text"> How to prove that the Post Correspondence problem is Undecidable?	
+                </p>
+                <p class="answer">Introduce a modified PCP and reduce the same to the original PCP.
+                    Again reduce Lu to the modified PCP.
+                    The chain of reduction infers if original Lu is known to be undecidable then conclude that PCP is undecidable.
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 4</h2>
+                <p class="question-text">Show that any PSPACE-hard language is also NP-hard?</p>
+                <p class="answer">First we must show that the language is not in NP. This is trivial since NP is a subset of PSPACE and therefore, anything outside of PSPACE is also outside of NP.
+                    Then we must show that any problem in NP can be reduced to any PSPACE-hard language. Thus, any PSPACE-hard problem is also NP-hard.
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 5</h2>
+                <p class="question-text">State Rice’s theorem?</p>
+                <p class="answer">Every non-trivial property of the RE language is undecidable.
+                    A property is trivial if it is either empty such that it is satisfied by no language or is all RE languages, or else it is non-trivial.
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 6</h2>
+                <p class="question-text">Show that the collection of all Turing machines is countable?</p>
+                <p class="answer">•	If for a set there is an enumerator, then the set is countable. 
+                    •	Any Turing Machine can be encoded with a binary string of 0’s and 1’s. 
+                    •	An enumeration procedure for the set of Turing Machine strings:
+                    Repeat
+                    •	Generate the next binary string of 0’s and 1’s in proper order
+                    •	Check if the string describes a Turing Machine 
+                    If Yes: Print string on output tape
+                    If No: Ignore string
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 7</h2>
+                <p class="question-text">Mention the difference between decidable and undecidable problems?</p>
+                <p class="answer">•	Decidable Problem – Existence of an algorithm
+                    •	Undecidable Problem – No algorithm for solving it.
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 8</h2>
+                <p class="question-text">What is universal turing machine?</p>
+                <p class="answer">Universal Turing machine (UTM) is a Turing machine that can simulate an arbitrary Turing machine on arbitrary input. The universal machine essentially achieves this by reading both the description of the machine to be simulated as well as the input thereof from its own tape</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 9</h2>
+                <p class="question-text">Features of Universal TM?</p>
+                <p class="answer">Universal TM can simulate any other turing machine. Universal TM is a single machine used to compute any computable sequence. 
+                    Universal TM has an ability to manipulate an unbounded amount of data in finite amount of time 
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 10</h2>
+                <p class="question-text">Give example for NP-complete problems?</p>
+                <p class="answer">Traveling Salesman Problem
+                    Graph Coloring Problem
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 11</h2>
+                <p class="question-text">Define modified posts correspondence problem?</p>
+                <p class="answer">Given lists A and B of k strings each from ∑* , say A = w1 ,w2, w3,…wk, B = x1 ,x2, x3,…xk does there exist a sequence of integers i1,i2,…ir such that w1, wi1,wi2,wi3,….wir=xi1,xi2,xi3,…xir .The sequence i1,i2,…ir is a solution to this instance of MPCP. </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 12</h2>
+                <p class="question-text">State two languages, which are not recursively enumerable?</p>
+                <p class="answer">•	Diagonalization language is not recursively enumerable. 
+                    •	The partially decidable languages or undecidable languages are not recursively enumerable. 
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 13</h2>
+                <p class="question-text">Define posts correspondence problem?</p>
+                <p class="answer">An instance of posts correspondence problem consists of two lists A = w1 ,w2, w3,…wk , B = x1 ,x2, x3,…xk of strings over some alphabet ∑.This instance of PCP has a solution if there is any sequence of integers i1,i2,…im with m ≥1 such that wi1,wi2,wi3,….wim=xi1,xi2,xi3,…xim.The sequence i1,i2,…im is a solution to this instance of PCP. </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 14</h2>
+                <p class="question-text">Write the properties of Recursive Languages?</p>
+                <p class="answer">a formal language is recursive if there exists a total Turing machine (a Turing machine that halts for every given input) that, when given a finite sequence of symbols as input, accepts it if it belongs to the language and rejects it otherwise. Recursive languages are also called decidable.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 15</h2>
+                <p class="question-text">When do you say a problem is NP - hard?</p>
+                <p class="answer"> A problem is said to be NP - hard if an algorithm for solving it can be translated into a problem which is NP problem. Thus NP - hard is a algorithm for a problem which is atle.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 16</h2>
+                <p class="question-text">When a problem is said to be undecidable? </p>
+                <p class="answer">If a problem is not a recursive language, then it is said to be undecidable problem</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 17</h2>
+                <p class="question-text">What is diagonalization language? </p>
+                <p class="answer">The language Ld Which consists of all those strings w such that the Turing machine represented by w does not accept the input w. 
+                    Ld = { wi | wi L(Mi)}
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 18</h2>
+                <p class="question-text">Define Problem Solvable in Polynomial Time?</p>
+                <p class="answer">A Turing Machine M is said to be of time complexity T(n) if whenever m given an input w of length n, m halts after making at most T(n) moves, regardless of whether or not m accepts.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 19</h2>
+                <p class="question-text">Show that union of recursive language is recursive?</p>
+                <p class="answer">L1 and L2 are recusive language. Then there exists a machine M1 that accepts L1 as well as machine M2 that accepts L2. We can simulate a machine M that accepts the language L such that L = L1 U L2. Then construct M which accepts if M1 accepts. If M1 does not accept then M2 simulates M. That means if M2 accepts then M accepts, if M2 rejects M also rejects. Thus M accepts the language L = L1 U L2 which is recursive.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 20</h2>
+                <p class="question-text">Define NP-Completeness?</p>
+                <p class="answer">A language is NP-complete if the following statements are true.(i)L is in NP (ii)For every language L‟ in NP there is a polynomial time reduction of L‟ to L.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 21</h2>
+                <p class="question-text">What is the difference between PCP and MPCP?</p>
+                <p class="answer">The difference between MPCP and PCP is that in the MPCP ,a solution is required to start with the first string on each list.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 22</h2>
+                <p class="question-text">What are the concepts used in UTMs?  </p>
+                <p class="answer">Stored program computers.•  Interpretive Implementation of Programming languages.•  Computability•</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 23</h2>
+                <p class="question-text">Define L .When is a trivial property? </p>
+                <p class="answer">L is defined as the set { | L(M) is in . } is a trivial property if is empty or it consists of all r.e languages</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 24</h2>
+                <p class="question-text">When we say a problem is decidable? Give an example of undecidable problem? </p>
+                <p class="answer">A problem whose language is recursive is said to be decidable. Otherwise the problem is said to be undecidable. Decidable problems have an algorithm that takes as input an instance of the problem and determines whether the answer to that instance is “yes” or “no”. (eg) of undecidable problems are (1)Halting problem of the TM.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 25</h2>
+                <p class="question-text">Define the class NP Problem?</p>
+                <p class="answer">A problem is said to be NP if 1. its solution comes from a finite set of possibilities, and 2. it takes polynomial time to verify the correctness of a candidate solution. Example - Scheduling problems.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 26</h2>
+                <p class="question-text">What are tractable problems and intractable problems? </p>
+                <p class="answer">Tractable Problem: a problem that is solvable by a polynomial-time algorithm. The upper bound is polynomial. Intractable Problem: a problem that cannot be solved by a polynomial-time algorithm. The lower bound is exponential.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 27</h2>
+                <p class="question-text">What are the properties of recursive and recursively enumerable languages?</p>
+                <p class="answer">(i)The complement of a recursive language is recursive,(ii)The union of two recursive languages are recursive. (iii)The union of two recursively enumerable languages are recursively enumerable.(iv)If a language L and are both recursively enumerable then L is recursive. </p>
+            </div>
+            <!--copy and paste the above code to add more questions-->
+        </section>
+    </main>
+   <script src="./sources/twomarks.js"></script>
+</body>
+</html>

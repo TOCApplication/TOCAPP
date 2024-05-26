@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #e0f7fa, #80deea);
+  color: #333;
+  padding: 20px;
+  font-size: 18px; 
+}
+
+header {
+  text-align: center;
+  background-color: #006064;
+  color: #ffffff;
+  padding: 20px 0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em; 
+}
+
+header p {
+  margin: 0;
+  font-size: 1.5em; 
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.question-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.question {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px; /* Increased padding for better touch targets */
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add transition for background color change */
+}
+
+.question:hover {
+  background-color: #e0f7fa; /* Change background color on hover */
+}
+
+.question h2 {
+  margin: 0 0 10px;
+  font-size: 1.4em;
+  color: #00796b;
+}
+
+.question p {
+  margin: 0;
+  font-size: 1.2em; 
+  color: #004d40;
+}
+
+.question-text{
+  font-weight: bold;
+}
+
+.answer {
+  justify-content: center;
+  align-content: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+  opacity: 0;
+  padding-top: .7rem; /* Add space between question and answer */
+}
+
+.answer.visible {
+  max-height: 450px; /* Adjust this value based on the content size */
+  opacity: 1;
+}
+p img{
+  max-width: 100%;
+}

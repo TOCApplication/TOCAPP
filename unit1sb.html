@@ -1,0 +1,281 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theory of Computation - 2 Mark Questions UNIT - 1</title>
+    <link rel="stylesheet" href="./sources/twomarks.css">
+</head>
+<body>
+    <header>
+        <h1>UNIT - 1</h1>
+        <p>Important 2 Mark Questions</p>
+    </header>
+    <main>
+      <!--Do not change any attributes name-->
+      <!--For understanding (Do not change the colored text other than Green and White)-->
+        <section class="question-container">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 1</h2>
+                <p class="question-text">Define Finite Automata(FA)</p>
+                <p class="answer">Finite Automata is a 5 tuples denoted by
+                    A = (Q, ∑, δ, q0, F) where<br>
+                    • Q is a finite set of states<br>
+                    • ∑ is the finite set of input symbols<br>
+                    • δ is a transition function (Q X ∑ → Q )<br>
+                    • q0 is the start state or initial state<br>
+                    • F is a set of final or accepting states
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 2</h2>
+                <p class="question-text">Differentiate between proof by contradiction and
+                    proof by contrapositive.</p>
+                <p class="answer">If H then C will be proved by assuming ~H and then
+                    proving falsehood of falsehood of C. This is proof by
+                    contadiction. Proof by contrapositive is proved by
+                    assuming ~H and proving ~C.
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 3</h2>
+                <p class="question-text">What is structural induction?</p>
+                <p class="answer">Let S(X) be a statement about the structures X that
+                    are defined by some particular recursive definition.<br>
+                    1. As a basis, Prove S(X) for the basis structure(s)
+                    X.<br>
+                    2. For inductive step, take a structure X that the
+                    recursive definition says is formed from Y1,
+                    Y2,....Yk. Assume the statements S(Y1),...,S(Yk)
+                    and use these to prove S(X).</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 4</h2>
+                <p class="question-text">State the difference between NFA and DFA</p>
+                <p class="answer">DFA must emit one and only one vertex/line/edge for
+                    each element of the alphabet. NFA do not have to
+                    obey this and can have multiple edges labeled with
+                    the same letter (repetition) and /or edges labeled with
+                    the empty string.
+                    Both DFA and NFA recognize the same languages –
+                    the regular languages.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 5</h2>
+                <p class="question-text">State the relations among regular expression,
+                    deterministic finite automata, non deterministic finite
+                    automaton and finite automaton with epsilon
+                    transition.</p>
+                <p class="answer">Every Regular language defined by a regular
+                    expression ia also defined by the finite automata. If a
+                    Regular language ‘L’ is accepted by a NFA then
+                    there exists a DFA that accepts ‘L’.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 6</h2>
+                <p class="question-text">What is inductive proof?</p>
+                <p class="answer">Statement P(n) follows from<br>
+                    (a) P(0) and<br>
+                    (b) P(n-1) implies P(n) for n>=1<br>
+                    Condition (a) is an inductive proof is the basis and
+                    Condition (b) is called the inductive step.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 7</h2>
+                <p class="question-text">What is meant by DFA</p>
+                <p class="answer">DFA—also known as deterministic finite state
+                    machine—is a finite state machine that accepts/rejects
+                    finite strings of symbols and only produces a unique
+                    computation (or run) of the automaton for each input string.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 8</h2>
+                <p class="question-text">Define the term Epsilon transition</p>
+                <p class="answer">In the automata theory, a nondeterministic finite
+                    automaton with ε-moves (NFA-ε)(also known as NFA-λ)
+                    is an extension of nondeterministic finite
+                    automaton(NFA), which allows a transformation to a new
+                    state without consuming any input symbols</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 9</h2>
+                <p class="question-text">What is non deterministic finite automata?</p>
+                <p class="answer">In automata theory, a nondeterministic finite automaton
+                    (NFA), or nondeterministic finite state machine, is a finite
+                    state machine that (1) does not require input symbols for
+                    state transitions and (2) is capable of transitioning to zero
+                    or two or more states for a given start state and input
+                    symbol</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 10</h2>
+                <p class="question-text">Define Deductive Proof.</p>
+                <p class="answer">A Deductive proof consists of a sequence of
+                    statements whose truth leads us from some initial
+                    statement, called the ‘hypothesis’ to a ‘conclusion’
+                    statement.<br>“if H then C”<br>
+                    Ex: if x >= 4 then 2x >= x2
+                    
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 11</h2>
+                <p class="question-text">What is a finite automaton?</p>
+                <p class="answer">A finite automaton (FA) is a simple idealized
+                    machine used to recognize patterns within input
+                    taken from some character set (or alphabet) C. The
+                    job of an FA is to accept or reject an input depending
+                    on whether the pattern defined by the FA occurs in
+                    the input.
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 12</h2>
+                <p class="question-text">Write Regular Expression for the set of strings over
+                    {0.1} that have atleast one. </p>
+                <p class="answer">Regualr Expression = (0+1)*1</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 13</h2>
+                <p class="question-text">Define the languages described by DFA and NFA.</p>
+                <p class="answer">L(DFA) = { w / δ‟(q0,w) is in F}.It is the set of
+                    strings w that take the start state q0 to one of the
+                    accepting states.<br>
+                    L(NFA)= { w / δ‟(q0,w)∩F≠ }.It is the set of
+                    strings w such that δ‟(q0,w)contains at least one
+                    accepting state.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 14</h2>
+                <p class="question-text">Define extended transition function for a DFA</p>
+                <p class="answer">The extended transition function δ‟: Qε∑ * εQ is
+                    defined as follows.<br>
+                    (i) δ’(q, ε ) = q (ε - Empty)<br>
+                    (ii)Suppose w is a string of form xa(w= xa),
+                    wε∑*and q Q , then δ’(q, w)= δ( δ’(q, x),a)</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 15</h2>
+                <p class="question-text">Give a regular expression for the set of all strings
+                    having odd number of 1’s </p>
+                <p class="answer">RE= 1(0+11)*</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 16</h2>
+                <p class="question-text">Give the regular expression for the set of all strings
+                    ending in 00.</p>
+                <p class="answer">Regular expression = (0+1)*00</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 17</h2>
+                <p class="question-text">When two states are equivalent and distinguishable? </p>
+                <p class="answer">We say that two states p and q are equivalent iff for
+                    each input string x , δ(p,x) is an accepting state iff
+                    δ(q,x) is an accepting state. p is distinguishable from
+                    q if there exists an x such that δ(p,x) is in F and v is
+                    not in F or vice versa.
+                    
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 18</h2>
+                <p class="question-text">What are the applications of regular expression?</p>
+                <p class="answer">Regular expression in UNIX, Lexical analysis,
+                    Pattern searching</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 19</h2>
+                <p class="question-text">Write regular expressions for the following.</p>
+                <p class="answer">(i)Binary numbers that are multiple of 2. (0/1)*.<br>
+                    (ii)Strings of a‟s and b‟s with no consecutive a‟s
+                    .b* (abb*)(a / ε)<br> (iii) Strings of a‟s and b‟s
+                    containing consecutive a‟s. (a/b)*aa(a/b)*</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 20</h2>
+                <p class="question-text">State Arden’s theorem</p>
+                <p class="answer">Let P and Q be two regular expressions over ∑. If P
+                    does not contain null string ε over ∑ then R=Q+RP,
+                    it has the solution R=QP*
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 21</h2>
+                <p class="question-text">Show that a connected graph G with n vertices
+                    and n-1 edges (n>2) has at least one leaf.
+                    </p>
+                <p class="answer">• G has n vertices & (n-1) edges.<br>
+                    • Therefore ∑ deg(V) = 2(n-1) which is
+                    impossible<br>
+                    • Therefore deg(V) = 1 for at least one vertex
+                    and this vertex is a leaf.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 22</h2>
+                <p class="question-text">State the Principle of induction.	</p>
+                <p class="answer">If S(i) is true for n = i ,then it is to be proved that for all n > i , S(n) implies S(n+1) then S(n) is true for all n ≥ i.. </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 23</h2>
+                <p class="question-text">What is proof by contradiction?</p>
+                <p class="answer">To prove P→Q<br>
+                    Prove by contradiction, that is assume P and ¬Q  are True then derive a Known fact will become false that is contradiction to our assumption so that the given one is true 
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 24</h2>
+                <p class="question-text">Define ε-closure(q) with an example</p>
+                <p class="answer">The set of all states reachable from a given state q using ε transitions only. We use ε -closure to denote the set of all vertices p such that there is a path from q to p labeled ε. </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 25</h2>
+                <p class="question-text">Differentiate between proof by contradiction and proof by contrapositive</p>
+                <p class="answer">To prove P→Q Prove by contradiction, that is assume P and ¬Q and derive a contradiction and Prove the contra positive, that is assume ¬Q and show ¬P.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 26</h2>
+                <p class="question-text">Define extended transition function for a NFA. </p>
+                <p class="answer">
+                    The extended transition function δ‟: QX∑*2 Q is defined as follows.<br>
+                    (i)	δ’(q, ε ) = {q} <br>
+                    (ii) Suppose w is of the form xa where a is the final symbol of w and x is the rest of w. δ’(q,x)= {p1, p2, p3...pk}<br> 
+                     k
+                     U δ(pi ,a) = {r1, r2, r3,.....rm}  
+                    i=1
+                    Therefore δ‟(q,w) ={r1, r2, r3,.....rm}
+                    
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 27</h2>
+                <p class="question-text">What is deductive proof?</p>
+                <p class="answer">A deductive proof consists of a sequence of statements, which starts from a hypothesis, or a given statement to a conclusion. Each step is satisfying some logical principle.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 28</h2>
+                <p class="question-text">Define − Transition Diagram.</p>
+                <p class="answer">Transition diagram is a directed graph in which the vertices of the graph correspond to the states of FA. If there is a transition from state q to state p on input a, then there is an arc labelled ‘a’ from q to p in the Transition Diagram.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 29</h2>
+                <p class="question-text">List out the operations on strings.</p>
+                <p class="answer">The various operations performed on strings are:<br>
+                    1. Length of a string<br>
+                    2. Empty string<br>
+                    3. Concatenation of string<br>
+                    4. Reverse of a string<br>
+                    5. Power of an alphabet<br>
+                    6. Kleene closure<br>
+                    7. Substring<br>
+                    8. Palindrome
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 30</h2>
+                <p class="question-text">State pumping lemma for regular set. </p>
+                <p claSS="answer">Let L be a regular set. Then there is a constant n such that if Z is a string in L and |Z| >=n, Z can be written as Z=UVW such that |V|>=1 and |UV|&lt;=n and for all i>=0 UViW is in L.</p>
+            </div>
+        </section>
+    </main>
+    <script src="./sources/twomarks.js"></script>
+
+
+</body></html>

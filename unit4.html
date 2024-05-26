@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theory of Computation - 2 Mark Questions UNIT - 1</title>
+    <link rel="stylesheet" href="./sources/twomarks.css">
+</head>
+<body>
+    <header>
+        <h1>UNIT - 4</h1>
+        <p>Important 2 Mark Questions</p>
+    </header>
+    <main>
+      <!--Do not change any attributes name-->
+      <!--For understanding (Do not change the colored text other than Green and White)-->
+        <section class="question-container">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 1</h2>
+                <p class="question-text">1. Design a TM that accepts the language of odd 
+                    integers written in binary. </p>
+                <p class="answer">To accept odd valued binary strings, we only have to 
+                    look at the last bit. The TM moves right until it reads 
+                    a blank, moves left one space and acepts if and only 
+                    if there is a 1 on the tape.
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 2</h2>
+                <p class="question-text">2. State the two normal forms and give an example</p>
+                <p class="answer">1. Chomsky normal form A→BC |a <br>
+                    2. Greibach normal form X→bYXZ|a</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 3</h2>
+                <p class="question-text">3. What is Turing machine?</p>
+                <p class="answer">TM is denoted by <br>
+                    M=(Q, ∑, Г, δ, q0, B,F) <br>
+                    where <br>
+                    Q – A finite non empty set of states <br>
+                    ∑ - A finite set of input symbols <br>
+                    Г – A finite non empty set of tape symbols <br>
+                    δ - The transition function is given by <br>
+                    δ:Q X Г → Q X Г X {L,R,S} <br>
+                    q0 – Initial state <br>
+                    B ε Г – Blank Symbols  <br>
+                    F - Final state</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 4</h2>
+                <p class="question-text">4. What is meant by Greibach Normal Form ?</p>
+                <p class="answer">A context-free grammar is in Greibach normal form
+                    (GNF) if the right-hand sides of all production rules start 
+                    with a terminal symbol, optionally followed by some 
+                    variables. A non-strict form allows one exception to this 
+                    format restriction for allowing the empty word (epsilon, 
+                    ε) to be a member of the described language</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 5</h2>
+                <p class="question-text">5. List the closure properties of Context Free 
+                    Languages</p>
+                <p class="answer">Union, intersection, kleene closure, substitution, 
+                    homomorphism</p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 6</h2>
+                <p class="question-text">6. What is a multiple track Turing machine? </h6></p>
+                <p class="answer">A TM in which the input tape is divided into multiple tracks where each track is having different inputs is called multiple track TM. </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 7</h2>
+                <p class="question-text">7. Define Halting Problem </p>
+                <p class="answer">The halting problem is the problem of determining, from a description of an arbitrary computer program and an input, whether the program will finish running or continue to run forever </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 8</h2>
+                <p class="question-text">8. List the primary objectives of Turing Machine</p>
+                <p class="answer">It acts as a Computing <br>
+                    It will accept Recursive Language <br>
+                    It has infinite amount of memory to store the input
+                    </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 9</h2>
+                <p class="question-text">9. List out different types of TMs. </p>
+                <p class="answer">Multi tape Turing machine, off-line Turing Machine , Multi track Turing machine & Universal TM </p>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Question 10</h2>
+                <p class="question-text">10. List out the different techniques for turing machine construction</p>
+                <p class="answer">(i)Storage in the Finite Control <br>
+                    (ii)Multiple tracks <br>
+                    (iii)Checking off symbols <br>
+                    (iv)Subroutines
+                    </p>
+            </div>
+            <!--copy and paste the above code to add more questions-->
+        </section>
+    </main>
+   <script src="./sources/twomarks.js"></script>
+</body>
+</html>

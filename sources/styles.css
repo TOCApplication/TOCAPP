@@ -4,7 +4,7 @@ body {
   background: linear-gradient(to bottom, #e0f7fa, #80deea);
   color: #333;
   padding: 20px;
-  margin-bottom: 78px;
+  height:100vh;
   font-size: 18px; /* Increased font size for better readability */
 }
 

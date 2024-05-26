@@ -5,6 +5,7 @@ body {
   color: #333;
   padding: 20px;
   font-size: 18px; 
+  scroll-behavior: smooth;
 }
 
 header {
@@ -79,7 +80,7 @@ main {
 }
 
 .answer.visible {
-  max-height: 450px; /* Adjust this value based on the content size */
+  max-height: 950px; /* Adjust this value based on the content size */
   opacity: 1;
 }
 p img{

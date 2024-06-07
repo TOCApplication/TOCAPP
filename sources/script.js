@@ -1,3 +1,6 @@
-function navigateToUnit(page) {
-  window.location.href = page;
+function navigateToUnit(page, unitName) {
+  window.location.href = `${page}?unitName=${encodeURIComponent(unitName)}`;
+}
+function back(){
+  window.location.href = 'index.html';
 }
